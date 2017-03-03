@@ -6,6 +6,8 @@ import VueRouter from 'vue-router';
 import RegisterComponents from './components';
 import RegisterFilters from './filters';
 
+import 'normalize.css/normalize.css';
+import './styles/styles.scss';
 console.clear();
 
 const apolloClient = new ApolloClient({

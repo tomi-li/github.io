@@ -1,7 +1,7 @@
 <template>
   <div>
     <router-link :to="{name: 'detail', params: { id: post.id }}">{{post.title}}</router-link>
-    <div v-html="htmlContent"></div>
+    <div class="preview-content" v-html="htmlContent"></div>
   </div>
 </template>
 
@@ -19,3 +19,9 @@
   }
 </script>
 
+<style lang="scss" scoped>
+
+  .preview-content {
+    font-size: 14px !important;
+  }
+</style>
